@@ -8,7 +8,8 @@ async function getCity(city) {
 
     if(data.ok){
         var result = await data.json();
-
+         if (result.results == undefined)
+            alert("Ciudad no encontrada")
         var lat = result.results[0].latitude;
         var lon = result.results[0].longitude;
         document.getElementById('city').innerText = result.results[0].name;

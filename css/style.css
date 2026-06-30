@@ -1,7 +1,8 @@
 #card{
     border-radius: 10px;
-    background-color: antiquewhite;
-    max-width: 20px;
+    background-color:whitesmoke;
+    border-color: gainsboro;
+    max-width: 200px;
 }
 
 
