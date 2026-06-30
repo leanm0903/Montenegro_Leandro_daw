@@ -1,0 +1,16 @@
+#card{
+    border-radius: 10px;
+    background-color: antiquewhite;
+    max-width: 20px;
+}
+
+
+
+.active{
+    color: red;
+    font-size: 12px;
+    display: block;
+}
+#error-message{
+    display: none;
+}
