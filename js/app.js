@@ -8,8 +8,11 @@ async function getCity(city) {
 
     if(data.ok){
         var result = await data.json();
-         if (result.results == undefined)
-            alert("Ciudad no encontrada")
+         if (result.results == undefined){
+            const msj = document.getElementById('msj');
+            msj.append("no encontramos la ciudad")
+         }
+
         var lat = result.results[0].latitude;
         var lon = result.results[0].longitude;
         document.getElementById('city').innerText = result.results[0].name;
@@ -31,7 +34,9 @@ async function getWeather(lat, lon) {
     }
     else{
          var error= document.getElementById("error-message");
-         error.setAttribute("class", "active")
+         error.setAttribute("class", "active");
+         error.append("Errror")
+
     }
  }
 
